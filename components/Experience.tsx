@@ -10,25 +10,6 @@ const Experience = () => {
       <h1 className="heading mb-20">
         My <span className="text-green-500">work experience</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
-        {companies.map((company) => (
-          <React.Fragment key={company.id}>
-            <div className="flex md:max-w-60 max-w-32 gap-2">
-              <img
-                src={company.img}
-                alt={company.name}
-                className="md:w-10 w-5"
-              />
-              <img
-                src={company.nameImg}
-                alt={company.name}
-                width={company.id === 4 || company.id === 5 ? 100 : 150}
-                className="md:w-24 w-20"
-              />
-            </div>
-          </React.Fragment>
-        ))}
-      </div>
 
       <div className="max-w-5xl mx-auto px-8 mt-10 relative">
         <div className="max-w-x3l mx-auto divide-zinc-800 relative">
@@ -61,9 +42,15 @@ const Experience = () => {
                     className="lg:w-32 md:w-20 w-16"
                   />
                   <div className="lg:ms-5">
+                    <p className="text-start text-white-100 mb-3 font-semibold">
+                      {card.year}
+                    </p>
                     <h1 className="text-start text-xl md:text-2xl font-bold">
                       {card.title}
                     </h1>
+                    <p className="text-start text-white-100 mt-1 font-semibold">
+                      {card.company}
+                    </p>
                     <p className="text-start text-white-100 mt-3 font-semibold">
                       {card.desc}
                     </p>
@@ -73,6 +60,26 @@ const Experience = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 mt-20">
+        {companies.map((company) => (
+          <React.Fragment key={company.id}>
+            <div className="flex md:max-w-60 max-w-32 gap-2">
+              <img
+                src={company.img}
+                alt={company.name}
+                className="md:w-40 w-20"
+              />
+              {/* <img
+                src={company.nameImg}
+                alt={company.name}
+                width={company.id === 4 || company.id === 5 ? 100 : 150}
+                className="md:w-24 w-20"
+              /> */}
+            </div>
+          </React.Fragment>
+        ))}
       </div>
     </div>
   );

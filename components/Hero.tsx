@@ -1,9 +1,10 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaDownload, FaLocationArrow } from 'react-icons/fa6';
 
-import MagicButton from "./MagicButton";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from './MagicButton';
+import { Spotlight } from './ui/Spotlight';
+import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import { FlipWords } from './ui/FlipWords';
+import { HoverBorderGradient } from './ui/HoverBorderGradient';
 
 const Hero = () => {
   return (
@@ -56,11 +57,17 @@ const Hero = () => {
           <div className="font-bold text-center text-[40px] md:text-6xl lg:text-6xl my-4 tracking-wide">
             Transforming{' '}
             <FlipWords
-              words={['Websites', 'Design', 'Business']}
+              words={[
+                'WebApp,',
+                'Design,',
+                'Business,',
+                'Technology,',
+                'Network,',
+              ]}
               className="text-green-500"
             />{' '}
             <br />
-            with Unlimited Creativitation
+            Unlimited Creativity.
           </div>
 
           {/* <TextGenerateEffect
@@ -69,16 +76,30 @@ const Hero = () => {
           /> */}
 
           <p className="my-8 text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Ola! I&apos;m Jericho, a Creative Developer based in Surabaya.
+            Hi! I&apos;m Jericho, a Creative Developer based in Surabaya.
           </p>
 
-          <a href="#about">
+          <a
+            className="m-40 flex justify-center text-center"
+            href="https://drive.google.com/file/d/1s3Ox4AdaU4LU2q5YTapy6rDMI0xm4Mcu/view?usp=sharing"
+            target="_blank"
+          >
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="dark:bg-black-100 bg-white text-black-100 dark:text-white flex items-center space-x-2 px-5"
+            >
+              <FaDownload />
+              <span>Download CV</span>
+            </HoverBorderGradient>
+          </a>
+          {/* <a href="#about">
             <MagicButton
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
