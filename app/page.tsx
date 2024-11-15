@@ -51,8 +51,8 @@ const Home = () => {
         <Hero />
 
         <Skills />
-        {/* <Skills /> */}
         <RecentProjects />
+
         {/* <Clients /> */}
         <Experience />
         <Grid />

@@ -79,7 +79,7 @@ const Hero = () => {
             Hi! I&apos;m Jericho, a Creative Developer based in Surabaya.
           </p>
 
-          <a
+          {/* <a
             className="m-40 flex justify-center text-center"
             href="https://drive.google.com/file/d/1s3Ox4AdaU4LU2q5YTapy6rDMI0xm4Mcu/view?usp=sharing"
             target="_blank"
@@ -92,7 +92,7 @@ const Hero = () => {
               <FaDownload />
               <span>Download CV</span>
             </HoverBorderGradient>
-          </a>
+          </a> */}
           {/* <a href="#about">
             <MagicButton
               title="Show my work"

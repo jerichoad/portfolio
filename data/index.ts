@@ -77,6 +77,20 @@ const dockItems = [
 export const projects = [
   {
     id: 1,
+    title: 'Portfolio Web - Dashboard',
+    des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
+    img: '/p5.svg',
+    iconLists: [
+      './icon/filament.ico',
+      'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg',
+      'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg',
+    ],
+    link: 'https://www.jerichoad.com/',
+    pin: 'n/a',
+  },
+  {
+    id: 2,
     title: 'Duta Sarana Computer - Ecommerce',
     des: 'Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.',
     img: '/p1.svg',
@@ -85,11 +99,11 @@ export const projects = [
       'https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg',
       'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg',
     ],
-    link: 'https://www.dutasarana.com/',
-    pin: 'dutasarana.com',
+    link: 'https://www.dutasarana.jerichoad.com/',
+    pin: 'dutasarana.jerichoad.com',
   },
   {
-    id: 2,
+    id: 3,
     title: 'Titik Temu - Video Consulting App',
     des: 'Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.',
     img: '/p2.svg',
@@ -98,12 +112,15 @@ export const projects = [
       'https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg',
       'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg',
     ],
-    link: 'https://www.titiktemu.co.id/',
-    pin: 'on develop',
+    link: 'https://www.titiktemu.jerichoad.com/',
+    pin: 'titiktemu.jerichoad.com',
   },
 ];
 
 export const skills = [
+  {
+    logos: './icon/filament.ico'
+  },
   {
     logos: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg',
   },
@@ -117,10 +134,28 @@ export const skills = [
     logos: '/chatgpt.svg',
   },
   {
-    logos: 'https://ui.aceternity.com/_next/image?url=%2Flogo.png&w=64&q=75',
+    logos: './icon/flutter.svg'
+  },
+  {
+    logos: './icon/mysql.svg'
+  },
+  {
+    logos: './icon/excel.svg'
+  },
+  {
+    logos: './icon/mikrotik.svg',
   },
   {
     logos: '/github.svg',
+  },
+  {
+    logos: './icon/meta.svg',
+  },
+  {
+    logos: './icon/wordpress.svg',
+  },
+  {
+    logos: './icon/googleads.svg',
   },
   {
     logos:
@@ -164,30 +199,54 @@ export const testimonials = [
 export const companies = [
   {
     id: 1,
+    name: 'sampoerna',
+    img: '/work/sampoerna.svg',
+  },
+  {
+    id: 2,
     name: 'dsc',
     img: '/work/dsc.svg',
   },
   {
-    id: 2,
+    id: 3,
     name: 'tititemu',
     img: '/work/titiktemu.svg',
   },
   {
-    id: 3,
+    id: 4,
     name: 'huawei',
     img: '/work/huawei.svg',
   },
   {
-    id: 4,
+    id: 5,
     name: 'atourin',
     img: '/work/atourin.svg',
   },
+  
 ];
 
 export const workExperience = [
   {
     id: 1,
-    year: 'Jul 2023 - Present',
+    year: 'Sep 2024 - Present',
+    company: 'PT HM Sampoerna (Under Contracted PT IOV)',
+    title: 'IT Project & Support',
+    desc: 'Troubleshoot MyHero app, optimize data flow, improve reporting, and support Commercial team needs.',
+    className: 'md:col-span-2',
+    thumbnail: '/work/sampoerna.svg',
+  },
+  {
+    id: 2,
+    year: 'Oct 2024 - Present',
+    company: 'Titik Temu',
+    title: 'Full Stack Developer - Freelance',
+    desc: 'Design, develop, and maintain web applications using Laravel, implement MySQL database solutions, and contribute to project planning and estimation.',
+    className: 'md:col-span-2', // change to md:col-span-2
+    thumbnail: '/work/titiktemu.svg',
+  },
+  {
+    id: 3,
+    year: 'Jul 2023 - Sep 2024',
     company: 'Duta Sarana Computer',
     title: 'Full Stack Developer',
     desc: 'Led the rebranding of dutasarana.com, developing a secure, responsive Laravel-based website with e-commerce integration and optimized performance.',
@@ -195,8 +254,8 @@ export const workExperience = [
     thumbnail: '/work/dsc.svg',
   },
   {
-    id: 2,
-    year: 'Jul 2023 - Present',
+    id: 4,
+    year: 'Jul 2023 - Sep 2024',
     company: 'Duta Sarana Computer',
     title: 'IT Support',
     desc: 'Established and managed VPN connections across 6 branch offices using Mikrotik, ensured network integrity, optimized data flow, resolved network issues, maintained Windows Servers, and supported email management and configuration.',
@@ -204,16 +263,7 @@ export const workExperience = [
     thumbnail: '/work/dsc.svg',
   },
   {
-    id: 3,
-    year: 'Mar 2023 - Present',
-    company: 'Titik Temu',
-    title: 'Full Stack Developer',
-    desc: 'Design, develop, and maintain web applications using Laravel, implement MySQL database solutions, and contribute to project planning and estimation.',
-    className: 'md:col-span-2', // change to md:col-span-2
-    thumbnail: '/work/titiktemu.svg',
-  },
-  {
-    id: 4,
+    id: 5,
     year: 'Feb 2022 - Jul 2022',
     company: 'Huawei',
     title: 'Business Operation Support - Managed Service XL Axiata',
@@ -222,7 +272,7 @@ export const workExperience = [
     thumbnail: '/work/huawei.svg',
   },
   {
-    id: 5,
+    id: 6,
     year: 'Nov 2021 - Jan 2022',
     company: 'Titik Temu',
     title: 'Digital Marketing Internship',
@@ -231,7 +281,7 @@ export const workExperience = [
     thumbnail: '/work/titiktemu.svg',
   },
   {
-    id: 6,
+    id: 7,
     year: 'Aug 2021 - Nov 2021',
     company: 'Atourin',
     title: 'Creative',
